@@ -103,18 +103,18 @@ while True:
     biome = random.choice(list(biomes.keys()))
     attribute = random.choice(list(biomes[biome].keys()))
     
-    print(f"\n🌍 Biome: {biome}")
+    print(f"\n Biome: {biome}")
     guess = input(f"What is the '{attribute}' of this biome? ")
     
     correct = biomes[biome][attribute]
     print(f"Correct answer: {correct}")
 
     if guess == correct:
-        print("✅ You got it right!")
+        print(" You got it right!")
     else:
         print("Try again!")
     
     again = input("\nDo you want another question? (y/n): ")
     if again.lower() != "y":
-        print("Good job studying! 📚")
+        print("Good job studying!")
         break
